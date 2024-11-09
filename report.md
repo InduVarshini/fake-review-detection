@@ -2,7 +2,7 @@
 
 ## Business Understanding
 
-The Fake Review Detection chatbot was developed to support online platforms and consumers in identifying potentially fraudulent reviews. Fake reviews can mislead customers and damage brand reputations, impacting business performance across various sectors, including e-commerce, hospitality, and services. This project aims to raise awareness and provide users with insights into the methodologies and tools used in detecting fake reviews. By offering a chatbot that answers questions about algorithms, detection techniques, data collection, and even analyzing specific review content, users are empowered to make more informed decisions about the trustworthiness of reviews they encounter online. The website will provide more detailed information from the business understanding phase. `https://induvarshini.github.io/fake-review-detection/`
+The Fake Review Detection chatbot was developed to support online platforms and consumers in identifying potentially fraudulent reviews. Fake reviews can mislead customers and damage brand reputations, impacting business performance across various sectors, including e-commerce, hospitality, and services. This project aims to raise awareness and provide users with insights into the methodologies and tools used in detecting fake reviews. By offering a chatbot that answers questions about algorithms, detection techniques, data collection, and even analyzing specific review content, users are empowered to make more informed decisions about the trustworthiness of reviews they encounter online. The website will provide more detailed information from the business understanding phase. [`Website Link`](https://induvarshini.github.io/fake-review-detection/)
 
 ## Chatbot Design
 
@@ -48,4 +48,4 @@ To address this challenge, I refined the entity recognition conditions and restr
 
 ## Accessing the Chatbot
 
-For testing and real-time interaction, the Fake Review Detection chatbot can be accessed via this link: `https://induvarshini.github.io/fake-review-detection/`.
+For testing and real-time interaction, the Fake Review Detection chatbot can be accessed via this link: [`Website Link`](https://induvarshini.github.io/fake-review-detection/)
