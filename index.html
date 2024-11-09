@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Review Detection Chatbot</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --heading-font: 'Raleway', sans-serif;
+      --body-font: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    body {
+        font-family: var(--body-font);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--heading-font);
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      padding: 6rem 2rem;
+      color: white;
+      text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .section p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero">
+    <h1>Fake Review Detection Bot</h1>
+    <p>Unearth Authentic Feedback and Empower Your Purchases</p>
+  </div>
+
+<div class="section px-8">
+  <h2 class="mb-6">The Outsized Impact of Online Reviews</h2>
+  <div class="flex flex-col md:flex-row items-center md:space-x-8">
+    <div class="w-full">
+      <p>In the age of online shopping and digital word-of-mouth, customer reviews have become a critical factor in purchasing decisions. According to a study by BrightLocal, 93% of consumers say that online reviews impact their purchasing decisions. Additionally, a survey by Podium found that 82% of consumers read online reviews for local businesses before visiting them. These statistics underscore the outsized role that reviews play in shaping consumer trust and confidence.</p>
+      <p>The impact of reviews extends beyond just the initial purchase decision. Research by Northwestern University's Spiegel Research Center reveals that the mere presence of reviews can increase conversion rates by as much as 270%. Furthermore, a study by the Harvard Business Review found that a one-star increase in a business's Yelp rating can lead to a 5-9% increase in revenue.</p>
+      <p>However, the proliferation of fake reviews poses a significant threat to the integrity of online review systems and the trust that consumers place in them. Juniper Research estimates that the global cost of online review fraud will reach $12 billion by 2024, highlighting the scale of this problem.</p>
+      <p>The importance of effective fake review detection cannot be overstated. By identifying and removing fraudulent reviews, businesses can maintain the credibility of their online reputation and ensure that consumers are making informed decisions based on authentic feedback. This, in turn, can lead to increased customer loyalty, higher conversion rates, and a stronger brand reputation - all of which contribute to a company's long-term success in the competitive e-commerce landscape.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section bg-white shadow-md rounded-lg">
+  <h2>The Evolution of Fake Review Detection</h2>
+  <div class="flex flex-col md:flex-row items-center md:space-x-8">
+    <div>
+      <p>The battle against fake reviews has evolved dramatically over the past decade. Early detection methods from 2010-2015 relied on simple rule-based systems and basic statistical analysis, looking for obvious patterns like multiple reviews posted from the same IP address or suspicious posting timestamps. As fraudsters became more sophisticated, so did detection methods.</p>
+      <p>By 2015-2020, the field embraced classical Natural Language Processing (NLP) techniques. These systems incorporated linguistic pattern analysis and basic sentiment evaluation, combined with user behavior tracking. While more effective, they still struggled with context and nuanced language, often failing to catch well-crafted fake reviews.</p>
+      <p>Today's landscape demands more sophisticated solutions. Traditional classification techniques, while valuable, face significant limitations. They rely heavily on predefined features, struggle with contextual understanding, and often fail to adapt to new deception tactics. This is where we can leverage the power of Large Language Models (LLMs) to understand not just the words, but the intricate patterns and contextual relationships that separate authentic reviews from fraudulent ones.</p>
+  </div>
+</div>
+
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "bd68d4cf-61da-450b-bd6d-b150774fb1e6", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "66e74a4f-9431-4d81-bda3-bb0d383017f0", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+</html>
