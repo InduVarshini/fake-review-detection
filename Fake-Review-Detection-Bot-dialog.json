@@ -1,0 +1,800 @@
+{
+  "intents": [
+    {
+      "intent": "ask_about_algorithm",
+      "examples": [
+        {
+          "text": "algorithm used"
+        },
+        {
+          "text": "can you tell me names of some algorithms used"
+        },
+        {
+          "text": "common algorithms used"
+        },
+        {
+          "text": "How do detection algorithms work?"
+        },
+        {
+          "text": "Tell me about the algorithms for detecting fake reviews"
+        },
+        {
+          "text": "what algorithms are used"
+        },
+        {
+          "text": "What algorithms are used to detect fake reviews?"
+        }
+      ],
+      "description": "Questions about algorithms used in fake review detection"
+    },
+    {
+      "intent": "ask_about_data_collection",
+      "examples": [
+        {
+          "text": "data"
+        },
+        {
+          "text": "data collection"
+        },
+        {
+          "text": "data gathering"
+        },
+        {
+          "text": "data used"
+        },
+        {
+          "text": "How do you collect data for fake review detection?"
+        },
+        {
+          "text": "how do you get the data"
+        },
+        {
+          "text": "How is data gathered to detect fake reviews?"
+        },
+        {
+          "text": "what data do you use"
+        },
+        {
+          "text": "What data is collected to find fake reviews?"
+        },
+        {
+          "text": "what data is used"
+        }
+      ],
+      "description": "Questions about data collection for fake review detection"
+    },
+    {
+      "intent": "ask_about_detection_techniques",
+      "examples": [
+        {
+          "text": "Can you explain the detection techniques"
+        },
+        {
+          "text": "deduction"
+        },
+        {
+          "text": "Detection mechanisms"
+        },
+        {
+          "text": "Detection techniques"
+        },
+        {
+          "text": "How are fake reviews detected?"
+        },
+        {
+          "text": "How can we detect fake reviews"
+        },
+        {
+          "text": "Tell me about the methods for detecting fake reviews"
+        },
+        {
+          "text": "What techniques are used to identify fake reviews?"
+        }
+      ],
+      "description": "Questions about techniques for detecting fake reviews"
+    },
+    {
+      "intent": "ask_about_use_case",
+      "examples": [
+        {
+          "text": "How can fake review detection be used?"
+        },
+        {
+          "text": "How is fake review detection applied in business?"
+        },
+        {
+          "text": "tell me some use cases"
+        },
+        {
+          "text": "use cases"
+        },
+        {
+          "text": "use cases for fake review detection"
+        },
+        {
+          "text": "What are the applications of detecting fake reviews?"
+        }
+      ],
+      "description": "Questions about use cases for fake review detection"
+    },
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Hola"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "help",
+      "examples": [
+        {
+          "text": "Help"
+        },
+        {
+          "text": "Help me use this chatbot"
+        },
+        {
+          "text": "How do I interact with this chatbot?"
+        },
+        {
+          "text": "How to use?"
+        },
+        {
+          "text": "What questions can I ask?"
+        }
+      ],
+      "description": "Request help on how to interact with the chatbot"
+    },
+    {
+      "intent": "submit_review_for_analysis",
+      "examples": [
+        {
+          "text": "Analyze this review."
+        },
+        {
+          "text": "Check my review."
+        },
+        {
+          "text": "Is this review fake?"
+        }
+      ],
+      "description": "Submit a review for analysis"
+    },
+    {
+      "intent": "thankyou",
+      "examples": [
+        {
+          "text": "Oh okay"
+        },
+        {
+          "text": "Ok"
+        },
+        {
+          "text": "Okay thanks"
+        },
+        {
+          "text": "Ok thanks"
+        },
+        {
+          "text": "Thanks for the information"
+        },
+        {
+          "text": "Thank you so much"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "commitment_phrases",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "everyone should try this",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "I will never regret this purchase",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "I will never trust this brand again",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "won't regret it",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "detection_approach_category",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Large Language Models",
+          "synonyms": [
+            "LLM",
+            "LLMs"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Machine Learning",
+          "synonyms": [
+            "ML"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Natural Language Processing",
+          "synonyms": [
+            "NLP"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rule based",
+          "synonyms": [
+            "Rule-based"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "extreme_negative_phrases",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Horrible in every way",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "I hate this product",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "It's all hype, no substance",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Total disappointment",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Totally useless and broken",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "extreme_positive_phrases",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "100% flawless",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "absolutely incredible",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "blown away",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "game-changer",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "never experienced anything like this",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "perfect in every way",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "this is a dream come true",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "unbelievable results",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "suspicious_punctuation",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "!!!",
+          "synonyms": [
+            "!!",
+            "!!!!",
+            "!!!!!!"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello! How can I help you today? Unsure about what to ask, just type 'help'."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#greeting",
+      "dialog_node": "node_10_1731114184354",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Review Analysis Result - GENUINE",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Analyzing the review... Great, the review looks genuine!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_analyze_review",
+      "context": {
+        "expecting_review_text": false
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "context.expecting_review_text && !@suspicious_punctuation && !@extreme_positive_phrases && !@extreme_negative_phrases && !@commitment_phrases",
+      "dialog_node": "node_1_1731122505642",
+      "previous_sibling": "node_review_analysis"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Modern LLMs can detect fake reviews by understanding nuanced contextual inconsistencies, comparing writing style across a user's reviews, and identifying artificially generated text patterns. They excel at catching AI-generated fake reviews by recognizing telltale signs of machine-generated content, though they may struggle with sophisticated human-written fakes. Check the last publication on this! https://www.sciencedirect.com/science/article/abs/pii/S0306457324002012"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_detection_techniques",
+      "conditions": "@detection_approach_category:(Large Language Models)",
+      "dialog_node": "node_3_1731113509434",
+      "previous_sibling": "node_8_1731113309287"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Simple heuristic rules identify suspicious patterns like multiple reviews from the same IP address, identical text across reviews, unusual posting timestamps, or extreme rating patterns. While straightforward to implement, these methods can be easily circumvented by sophisticated fraudsters."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "If you are interested to read more, check out this publication! https://ojs.aaai.org/index.php/ICWSM/article/view/14389"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_detection_techniques",
+      "conditions": "@detection_approach_category:(Rule based)",
+      "dialog_node": "node_5_1731112834150"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Uses linguistic features to spot fake reviews by analyzing writing style, sentiment consistency, lexical diversity, and n-gram patterns. Techniques like syntactic parsing and semantic analysis can reveal unnatural language patterns or copied content that may indicate fake reviews. If you are interested to read more about this, check this out! https://arxiv.org/abs/1107.4557"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_detection_techniques",
+      "conditions": "@detection_approach_category:(Natural Language Processing)",
+      "dialog_node": "node_6_1731113087587",
+      "previous_sibling": "node_5_1731112834150"
+    },
+    {
+      "type": "standard",
+      "title": "Thank you and Closing",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for chatting with me today! Hope I was of some help today :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Provide Feedback",
+            "options": [
+              {
+                "label": "Helpful",
+                "value": {
+                  "input": {
+                    "text": "Helpful Bot"
+                  }
+                }
+              },
+              {
+                "label": "Not Helpful",
+                "value": {
+                  "input": {
+                    "text": "Not a Helpful Bot"
+                  }
+                }
+              },
+              {
+                "label": "Could improve",
+                "value": {
+                  "input": {
+                    "text": "Could use some improvisation"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#thankyou",
+      "dialog_node": "node_6_1731121511811",
+      "previous_sibling": "node_help"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Machine Learning leverages supervised learning algorithms trained on labeled datasets of genuine and fake reviews. Models use features like user behavior, review metadata, linguistic patterns, and temporal information. Common approaches include Random Forests, SVMs, and neural networks that can capture complex relationships between multiple indicators of review authenticity. You can check out more here! https://www.researchgate.net/publication/370544960_Detect_Fake_Reviews_Using_Random_Forest_and_Support_Vector_Machine"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_detection_techniques",
+      "conditions": "@detection_approach_category:(Machine Learning)",
+      "dialog_node": "node_8_1731113309287",
+      "previous_sibling": "node_6_1731113087587"
+    },
+    {
+      "type": "standard",
+      "title": "Submit Review for Analysis",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please enter the review text, and I'll analyze it for potential fake review patterns based on common indicators."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "expecting_review_text": true
+      },
+      "conditions": "#submit_review_for_analysis",
+      "dialog_node": "node_analyze_review",
+      "previous_sibling": "node_use_case"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. Could you try rephrasing your question?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_anything_else",
+      "previous_sibling": "node_6_1731121511811"
+    },
+    {
+      "type": "standard",
+      "title": "Ask about Algorithms",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Some common algorithms used include support vector machines, decision trees, and neural networks, which help detect patterns in review language and behavior. By combining LLMs with machine learning algorithms like Support Vector Machines (SVM) or Random Forests, we can enhance the accuracy and robustness of fake review detection systems. These models can be trained on large datasets of labeled reviews to identify complex patterns that traditional algorithms may miss."
+              },
+              {
+                "text": "You can read more here! https://www.sciencedirect.com/science/article/pii/S2666307424000196"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#ask_about_algorithm",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_ask_about_algorithm",
+      "previous_sibling": "node_detection_techniques"
+    },
+    {
+      "type": "standard",
+      "title": "Ask about Data Collection",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Data collection includes gathering information on review content, user behavior, and historical review trends, which are essential for training detection models."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#ask_about_data_collection",
+      "dialog_node": "node_ask_about_data_collection",
+      "previous_sibling": "node_ask_about_algorithm"
+    },
+    {
+      "type": "standard",
+      "title": "Detection Techniques",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Techniques range from traditional rule based method, Natural Language Processing (NLP), Machine Learning to leveraging Large Language Models (LLMs) to detect fake reviews. Choose a category to learn more about the techniques used."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Approach Categories",
+            "options": [
+              {
+                "label": "Rule Based",
+                "value": {
+                  "input": {
+                    "text": "Rule Based techniques"
+                  }
+                }
+              },
+              {
+                "label": "Natural Language Processing",
+                "value": {
+                  "input": {
+                    "text": "NLP based techniques"
+                  }
+                }
+              },
+              {
+                "label": "Machine Learning",
+                "value": {
+                  "input": {
+                    "text": "ML based techniques"
+                  }
+                }
+              },
+              {
+                "label": "Large Language Models",
+                "value": {
+                  "input": {
+                    "text": "LLM based techniques"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#ask_about_detection_techniques",
+      "dialog_node": "node_detection_techniques",
+      "previous_sibling": "node_10_1731114184354"
+    },
+    {
+      "type": "standard",
+      "title": "Help",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You can ask questions like:\n- 'What algorithms are used for fake review detection?'\n- 'What data is collected for fake review detection?'\n- 'How is fake review detection used in business?' or 'Analyze my review.' I’m here to help!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#help",
+      "dialog_node": "node_help",
+      "previous_sibling": "node_analyze_review"
+    },
+    {
+      "type": "standard",
+      "title": "Review Analysis Result - FAKE",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Analyzing the review...Oops! Looks like it is a fake review. Be cautious!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_analyze_review",
+      "context": {
+        "expecting_review_text": false
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "context.expecting_review_text && @suspicious_punctuation || @extreme_positive_phrases || @extreme_negative_phrases || @commitment_phrases",
+      "dialog_node": "node_review_analysis"
+    },
+    {
+      "type": "standard",
+      "title": "Use Cases",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Fake review detection is widely used in e-commerce, travel, and other sectors to maintain quality and authenticity of online reviews, protecting both consumers and businesses. Let's say you're an entrepreneur or executive at a company that depends on online reviews (i.e., restaurant, hotel, OTA, eCommerce store, or service provider). In that case, you'd better be concerned about protecting your brainchild by identifying and defusing fake reviews!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#ask_about_use_case",
+      "dialog_node": "node_use_case",
+      "previous_sibling": "node_ask_about_data_collection"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "source": "https://www.reviewtrackers.com/wp-content/uploads/blog-hero-Tools-for-Fake-Review-Detection-How-to-Spot-Fake-Reviews.png",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Welcome to the Fake Review Detection Bot! I can help answer questions about fake review detection techniques, data collection, or analyze a review for you. Type 'help' if you need guidance on what to ask."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "language": "en",
+  "description": "Fake Review Detection Bot",
+  "name": "Fake Review Detection Bot-dialog"
+}
